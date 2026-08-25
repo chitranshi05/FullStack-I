@@ -5,12 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+        @layer{
+            
+        }
         @font-face{
             font-family:"HappySwirly";
             src: url("./font/HappySwirly-KVB7l.ttf");
         }
-        p{
+        section h1{
+            color:yellow
+
+        }
+        section>h1{
+            text-transform:lowercase;
+        }
+        h1+p{
             font-family:HappySwirly;
+            color:red!important;
+
+        }
+        .p{
+            color:blueviolet;
         }
         *{
             margin:0;
@@ -20,19 +35,49 @@
         #MyId{
             color:green;
         }
+        .myclass{
+            color:red;
+        }
+        input[type="email"]{
+            border-radius:20px;
+            color:red;
+        }
+        input[type="password"]{
+            border-radius:20px;
+            color:blue;
+        }
+        h2{
+            color:violet
+
+        }
+        ul>li.myclass{
+            background-color:lightpink;
+        }
     </style>
 </head>
 
 
 <body>
+    <section>
+        <h1>Good morning</h1>
+
+        <div>
+            <h1>!!</h1>
+        </div>
+    </section>
+    <h1>
+        Welcome
+    </h1>
 <p> Hello world</p>
 <h2>Selectors</h2>
 <ul>
-    <li>Universal Selector</li>
+    <li class="myclass ">Universal Selector</li>
     <li id="MyId">Id</li>
     <li>Class</li>
     <li>Attribute</li>
     <li>Element Name</li>
 </ul>
+<input type="email" placeholder="email">
+<input type="password" placeholder="password">
 </body>
 </html>
