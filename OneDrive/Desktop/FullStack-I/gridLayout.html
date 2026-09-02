@@ -1,27 +1,141 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Simple Bento Design</title>
     <style>
-     .container{
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 100px 100px 100px;
-     }
-     .container> div{
-        outline: 1px solid black;
-     }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            padding: 20px;
+            background: #f0f0f0;
+            font-family: Arial, sans-serif;
+        }
+
+        .bento-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(3, 150px);
+            gap: 15px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .box {
+            background: white;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+            font-weight: bold;
+            border: 2px solid #ddd;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .box-1 {
+            grid-column: 1 / 3;
+            background: #667eea;
+            color: white;
+        }
+
+        .box-2 {
+            grid-column: 3 / 5;
+            background: #f093fb;
+            color: white;
+        }
+
+        .box-3 {
+            grid-column: 1 / 2;
+            background: #4facfe;
+            color: white;
+        }
+
+        .box-4 {
+            grid-column: 2 / 4;
+            background: #43e97b;
+            color: white;
+        }
+
+        .box-5 {
+            grid-column: 4 / 5;
+            background: #fa709a;
+            color: white;
+        }
+
+        .box-6 {
+            grid-column: 1 / 2;
+            background: #30cfd0;
+            color: white;
+        }
+
+        .box-7 {
+            grid-column: 2 / 3;
+            background: #a8edea;
+            color: #333;
+        }
+
+        .box-8 {
+            grid-column: 3 / 5;
+            background: #ff9a56;
+            color: white;
+        }
+
+        @media (max-width: 768px) {
+            .bento-grid {
+                grid-template-columns: repeat(2, 1fr);
+                grid-template-rows: repeat(auto-fit, 120px);
+            }
+
+            .box-1,
+            .box-2,
+            .box-4,
+            .box-8 {
+                grid-column: 1 / 3;
+            }
+
+            .box-3,
+            .box-5,
+            .box-6,
+            .box-7 {
+                grid-column: 1 / 2;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .bento-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .box {
+                grid-column: 1 !important;
+            }
+
+            .box {
+                font-size: 18px;
+            }
+        }
     </style>
 </head>
 
-
 <body>
-    <div class="container">
-        <div id="box1">1</div>
-        <div id="box2">2</div>
-        <div id="box3">3</div>
+    <div class="bento-grid">
+        <div class="box box-1">Box 1</div>
+        <div class="box box-2">Box 2</div>
+        <div class="box box-3">Box 3</div>
+        <div class="box box-4">Box 4</div>
+        <div class="box box-5">Box 5</div>
+        <div class="box box-6">Box 6</div>
+        <div class="box box-7">Box 7</div>
+        <div class="box box-8">Box 8</div>
     </div>
 </body>
+
 </html>
