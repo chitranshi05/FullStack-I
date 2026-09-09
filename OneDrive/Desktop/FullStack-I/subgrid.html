@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Subgrid Example</title>
+        <style>
+            /* -- means variable declaration in CSS. It allows you to define custom properties that can be reused throughout your stylesheet. In this example, we have two variables: --primary-color and --secondary-color, which are set to black and yellow respectively. These variables can be used later in the CSS to maintain consistency and make it easier to update colors across the entire stylesheet.*/
+            .container{
+                outline: 1px solid black ;
+                height: 500px;
+                width: 500px;
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                grid-template-rows:1fr 1fr 1fr;
+            }
+            .container>div{
+                outline: 1px dashed grey;
+                font-size: 30px;
+            }
+            #box1{
+                grid-column: 1/3;
+                grid-row:1/3;
+            }
+            #box6{
+                grid-column:2/3;
+                grid-row:1/2;
+            }
+            .parent{
+                display: grid;
+                font-size: 30px;
+                grid-template-columns: subgrid;
+                grid-template-rows: subgrid;
+                grid-column: 1/3;
+                grid-row: 1/3;
+                background-color: blue;
+            }
+            .child{
+                outline: 1px solid black;;
+                background-color:red;
+                font-size: 20px;
+                grid-column: 1/2;
+                grid-row: 1/2;
+            }
+        </style>
+
+        <body>
+            <div class="container">
+                <div class="parent">
+                    <div class="child">1</div>
+                    <div class="child">2</div>
+                    <div class="child">3</div>
+            </div>
+        </body>
+</html>

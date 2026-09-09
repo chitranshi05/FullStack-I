@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Subgrid Example</title>
+        <style>
+            /* -- means variable declaration in CSS. It allows you to define custom properties that can be reused throughout your stylesheet. In this example, we have two variables: --primary-color and --secondary-color, which are set to black and yellow respectively. These variables can be used later in the CSS to maintain consistency and make it easier to update colors across the entire stylesheet.*/
+           
+            :root{ 
+            --primary-color: black;
+            --secondary-color: yellow;
+           }
+           p{
+            background-color: var(--primary-color);
+            color: var(--secondary-color);
+           }
+           </style>
+           </head>
+           <body>
+            <p> This is A paragraph with custom colors using CSS variables.</p>
+           </body>
