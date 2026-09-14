@@ -1,0 +1,41 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Layers</title>
+        <style>
+        @layer base,special;
+        @layer base {
+            p{
+               font-size: 20px;
+                color: black;
+            }
+        }
+        @layer special{
+            p{
+                color:blue;
+            }
+        }
+        button{
+            background-color: white;
+            border: 1px solid black;
+            box-shadow: 2px 2px 5px gray;
+            width: 100px;
+            height: 50px;
+            border-radius: 20%;
+        }
+        button:active{
+            background-color: lightyellow;
+            border: 1px solid black;
+            box-shadow: inset 2px 2px 5px gray;
+        }
+           </style>
+           </head>
+           <body>
+           <p>hello</p>
+            <button>Click me</button>   
+            
+            </div>
+           </body>
