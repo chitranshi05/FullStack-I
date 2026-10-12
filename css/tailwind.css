@@ -1,0 +1,11 @@
+<div class="bg-fuchsia-300 m-[20px] size-fit">
+  <p class="text-amber-200 text-6xl p-[10px]">  Hello WORLD </p>
+</div>
+<div class="bg-pink-300 p-[20px] m-[20px] w-[200px] h-[200px] shadow-lg shadow-black/90 text-justify"> Box 1 </div>
+
+<div class="bg-gradient-to-r from-purple-800 to-pink-600 h-[200px] w-[200px] m-[20px] shadow-lg shadow-black/90  ">2</div>
+<button class="bg-gradient-to-r from-violet-400 to-blue-200 text-black font-semibold px-3 py-3 rounded-xl shadow-sm shadow-black/20 hover:shadow-lg hover:shadow-black/30 hover:-translate-y-0.5 transition-all m-[20px]">
+  Submit
+</button>
+
+/* utility first */

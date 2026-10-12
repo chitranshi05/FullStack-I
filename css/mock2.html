@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Mock</title>
+        <style>
+            .Gallery{
+                margin: 10px auto;
+                padding: 0 10px;
+                max-width: 1200px;
+                display: grid;
+                grid-template-columns:repeat(auto-fill,minmax(180px,1fr));
+                gap: 10px;
+                grid-auto-rows: 8px;
+            }
+            .card{
+                display:flex;
+                flex-direction: column;
+                overflow: hidden;
+                border-radius:8px;
+
+            }
+            .tall{
+                grid-row:span 22;
+            }
+            .med{
+                grid-row:span 15;
+            }
+            .big{
+                grid-row:span 29;
+            }
+            .pin{
+                margin:0;
+                flex: 1;
+                border-radius: 8px;
+            }
+            .avatar{
+                display: inline-block;
+                width:20px;
+                height:20px;
+                background:grey;
+                border-radius: 50%;
+            }
+            .footer p{
+                margin:0;
+            }
+            .card h3{
+                margin: 0;
+            }
+            .footer{
+                margin: 0;
+                display:flex;
+                align-items: center;
+            }
+            @media (min-width: 1200px){
+                .Gallery{
+                    grid-template-columns: repeat(5,1fr);
+                }
+            }
+            @media (min-width: 700px) and (max-width: 1199px){
+                 .Gallery{
+                    grid-template-columns: repeat(3,1fr);
+                }
+            }
+            @media(max-width:700px){
+                 .Gallery{
+                    grid-template-columns: repeat(2,1fr);
+                }
+            }
+</style>
+</head>
+<body>
+
+
+<main class="Gallery">
+    <div class="card tall">
+        <div class="pin" style="background:red"></div>
+        <h3>Monday Vibes</h3>
+        <div class="footer">
+         <span class="avatar"></span>  
+        <p>@ash</p>
+    </div>
+    </div>
+    <div class="card med">
+        <div class="pin" style="background-color:yellow"></div>
+        <h3>Tuesday Vibes</h3>
+        <div class="footer">
+         <span class="avatar"></span>  
+        <p>@ash</p>
+    </div>
+    </div>
+    <div class="card big">
+        <div class="pin" style="background-color:purple"></div>
+        <h3>Wednesday Vibes</h3>
+        <div class="footer">
+         <span class="avatar"></span>  
+        <p>@ash</p>
+    </div>
+    </div>
+    <div class="card tall">
+        <div class="pin" style="background-color:teal"></div>
+        <h3>Monday Vibes</h3>
+        <div class="footer">
+         <span class="avatar"></span>  
+        <p>@ash</p>
+    </div>
+    </div>
+    <div class="card med">
+        <div class="pin" style="background-color:pink"></div>
+        <h3>Monday Vibes</h3>
+        <div class="footer">
+         <span class="avatar"></span>  
+        <p>@ash</p>
+    </div>
+    </div>
+    <div class="card tall">
+        <div class="pin" style="background-color: lightseagreen"></div>
+        <h3>Monday Vibes</h3>
+        <div class="footer">
+         <span class="avatar"></span>  
+        <p>@ash</p>
+    </div>
+    </div>
+    <div class="card big">
+        <div class="pin" style="background-color:green"></div>
+        <h3>Monday Vibes</h3>
+        <div class="footer">
+         <span class="avatar"></span>  
+        <p>@ash</p>
+    </div>
+    </div>
+    <div class="card tall">
+        <div class="pin" style="background-color:red"></div>
+        <h3>Monday Vibes</h3>
+        <div class="footer">
+         <span class="avatar"></span>  
+        <p>@ash</p>
+    </div>
+    </div>
+    <div class="card med">
+        <div class="pin" style="background-color:blue"></div>
+        <h3>Monday Vibes</h3>
+        <div class="footer">
+         <span class="avatar"></span>  
+        <p>@ash</p>
+    </div>
+    </div>
+
+</main>
+</body>
+</html>

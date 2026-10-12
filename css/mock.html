@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Mock</title>
+        <style>
+            body{
+                margin:0;
+                background-color: black;
+            }
+            .hero{
+                
+                display:flex;
+                flex-direction:column;
+                background: linear-gradient(to right,rgb(74, 5, 5),black 60%);
+                margin-bottom:10px;
+            }
+            .hero h2{
+                margin: 0;
+                margin-left:20px;
+                margin-top:30px;
+                font-weight:bold;
+                font-size: 60px;;
+                padding:10px;
+                color:white;
+            }
+            .hero p{
+                color:white;
+                font-size:15px;
+                margin: 0;
+                margin-left: 30px;
+            }
+            .button{
+                display:flex;
+                flex-direction:row;
+                margin-top: 5px;
+                margin-left: 5px;
+                padding:20px;
+                margin-bottom:10px;
+                
+            }
+            .button .b1{
+                width:5%;
+                height:30px;
+                font-weight: bold;
+                margin-right:7px;
+                border-radius: 5px;
+            }
+            .button .b2{
+                width:10%;
+                height:30px;
+                color:white;
+                font-weight: bold;
+                background-color:rgb(154, 139, 139);
+                border-radius:7px;
+
+            }
+            .slide{
+                
+                margin:0;
+                margin-left:30px;
+                color:white;
+                background-color:black;
+            }
+            .cards{
+                margin-top:20px;
+                margin-bottom: 20px;
+               
+                display:flex;
+                gap:10px;
+                flex-direction: row;
+                overflow-x: auto;
+            }
+            .cards div{
+                width: 250px;
+                height: 150px;
+                display:flex;
+                align-items: flex-end;
+                justify-content: flex-start;
+                flex-shrink: 0;
+                border-radius: 10px;
+            }
+            .slide h3{
+                margin:0;
+            }
+            @media (min-width:1024px){
+                .cards div{
+                    width: 200px;
+                }
+                .hero h2{
+                    font-size: 50px;
+                }
+            }
+            @media (min-width: 600px) and (max-width: 1023px) {
+
+                .hero h2 {
+                font-size: 40px;
+                }
+
+                .hero {
+                padding: 15px;
+                }
+
+                .cards div {
+                    width: 150px;
+                }
+            }
+            @media (max-width: 599px) {
+
+            .hero {
+               padding: 10px;
+    }
+
+    .hero h2 {
+        font-size: 28px;
+        margin: 0;
+    }
+
+    .hero p {
+        font-size: 12px;
+        margin-left: 10px;
+    }
+
+    .button {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+    }
+
+    .button button {
+        width: 120px;
+    }
+
+    .cards div {
+        width: 110px;
+        height: 130px;
+    }
+
+    .slide {
+        margin-left: 10px;
+    }
+}
+
+</style>
+</head>
+<body>
+    <div class="hero" id="hero1">
+        <h2>Midnight Horizon</h2>
+        <p>A strabded astronaut must choose between saving her crew or completing</p>
+        <p>humanity's last mission before the signal fades forever</p>
+        <div class="button">
+        <button class="b1">Play</button>
+        <button class="b2">More Info</button>
+        </div>
+    </div>
+
+
+    <div class="slide">
+        <div>
+          <h3>Trending Now</h3>  
+        </div>
+        <div class="cards">
+            <div style="background-color:purple">purple</div>
+            <div style="background-color: indigo">indigo</div>
+            <div style="background-color: red">red</div>
+            <div style="background-color: turquoise">turquoise</div>
+            <div style="background-color: yellow">mustard</div>
+            <div style="background-color: greenyellow">light green</div>
+        </div>
+         <div>
+          <h3>Continue Watching</h3>  
+        </div>
+        <div class="cards">
+            <div style="background-color:purple">purple</div>
+            <div style="background-color: indigo">indigo</div>
+            <div style="background-color: red">red</div>
+            <div style="background-color: turquoise">turquoise</div>
+            <div style="background-color: yellow">mustard</div>
+            <div style="background-color: greenyellow">light green</div>
+        </div>
+         <div>
+          <h3>Trending Now</h3>  
+        </div>
+        <div class="cards">
+            <div style="background-color:purple">purple</div>
+            <div style="background-color: indigo">indigo</div>
+            <div style="background-color: red">red</div>
+            <div style="background-color: turquoise">turquoise</div>
+            <div style="background-color: yellow">mustard</div>
+            <div style="background-color: greenyellow">light green</div>
+        </div>
+    </div>
+</body>
+</html>

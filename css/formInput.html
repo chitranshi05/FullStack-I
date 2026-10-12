@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input{
+            background-color:bisque;
+            color: black;
+        }
+        input:enabled{
+            color:black;
+           
+        }
+        input:valid{
+            background-color:green;
+        }
+        input:invalid{
+            background-color:red
+        }
+        input:in-range{
+            background-color:pink;
+        }
+        input:out-of-range{
+            background-color: brown;
+        }
+        input:placeholder-shown{
+            outline:3px solid brown;
+        }
+        input:read-only{
+            border-width:0px;
+            background-color:turquoise
+        }
+        input:focus{
+            box-shadow: 0 0 15px black;
+        }
+    </style>
+</head>
+
+
+<body>
+    <input type="text" placeholder="First Name" required/>
+    <input type="text" placeholder="Middle Name">
+    <input type="text" placeholder="Last Name" required/>
+    <input type="text" value="Mathura" disabled/>
+    <input type="email" placeholder="Email" required/>
+    <input type="text" value="Mister" readonly />
+    <input type="number" min="1" max="100" />
+    
+</body>
+</html>

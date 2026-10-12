@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Variable Example</title>
+        <style>
+            /* -- means variable declaration in CSS. It allows you to define custom properties that can be reused throughout your stylesheet. In this example, we have two variables: --primary-color and --secondary-color, which are set to black and yellow respectively. These variables can be used later in the CSS to maintain consistency and make it easier to update colors across the entire stylesheet.*/
+           
+            :root{ 
+            --primary-color: black;
+            --secondary-color: yellow;
+            --text-size: 20px;
+            --text-family: Arial, sans-serif;
+           }
+           div{
+            --primary-color: red;
+            --secondary-color: blue;
+           }
+           p{
+            background-color: var(--primary-color);
+            color: var(--secondary-color);
+            font-size: calc(var(--text-size)*2);
+            font-family: var(--text-family);
+           }
+           </style>
+           </head>
+           <body>
+            <p> This is A paragraph with custom colors using CSS variables.</p>
+            <div>
+                <p> This is A paragraph with custom colors using CSS variables.</p>
+            </div>
+           </body>

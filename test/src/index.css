@@ -1,0 +1,11 @@
+@import "tailwindcss";
+
+/* @config "../tailwind.config.js"; */
+@theme {
+    --color-coffee-roasted: #efc;
+    --color-coffee-normal: #abababa,
+}
+
+.heading {
+    @apply text-3xl font-bold underline text-center bg-coffee-roasted md:bg-coffee-normal;
+}

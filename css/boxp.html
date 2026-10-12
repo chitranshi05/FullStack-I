@@ -1,0 +1,106 @@
+<style>
+    body {
+        margin: 0;
+        background-color: black;
+        color: white;
+        font-family: Arial, sans-serif;
+    }
+
+    .container {
+        width: 100%;
+        padding-bottom: 40px;
+    }
+
+    .heading {
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 48px;
+        font-weight: bold;
+        text-align: center;
+        padding: 20px;
+        position: sticky;
+        top: 0;
+        background-color: black;
+    }
+
+    .box {
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 2em;
+        font-weight: bold;
+        color: white;
+        position: sticky;
+        top: 0;
+
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+
+        text-shadow: 0 2px 8px black;
+    }
+    .ironman {
+    background-image:
+        linear-gradient(
+            to right,
+            rgba(120, 0, 0, 0.5),
+            transparent 50%,
+            rgba(0, 0, 0, 0.8)
+        ),
+        url('IronMan.jpg');
+}
+
+.spiderman {
+    background-image:
+        linear-gradient(
+            to right,
+            rgba(180, 0, 0, 0.4),
+            transparent 50%,
+            rgba(0, 0, 0, 0.8)
+        ),
+        url('SpiderMan.jpg');
+}
+
+.thor {
+    background-image:
+        linear-gradient(
+            to right,
+            rgba(30, 80, 180, 0.5),
+            transparent 50%,
+            rgba(0, 0, 0, 0.8)
+        ),
+        url('thor.jpg');
+}
+</style>
+
+<body>
+    <div class="container">
+
+        <div class="heading">MARVEL-HEROS</div>
+
+        <div class="box"
+            style="background-image:
+            linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.8)),
+            url('IronMan.jpg');">
+            <span>IRON MAN</span>
+        </div>
+
+        <div class="box"
+            style="background-image:
+            linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.8)),
+            url('SpiderMan.jpg');">
+            <span>SPIDER-MAN</span>
+        </div>
+
+        <div class="box"
+            style="background-image:
+            linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.8)),
+            url('thor.jpg');">
+            <span>THOR</span>
+        </div>
+
+    </div>
+</body>
